@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <input
+        type="number"
+        placeholder="Enter Number"
+        oninput="input1(this.value)"
+      />
+      <select name="calculation" id="" onchange="calculate(this.value)">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">x</option>
+        <option value="/">/</option>
+      </select>
+      <input
+        type="number"
+        placeholder="Enter Number"
+        oninput="input2(this.value)"
+      />
+      <div class="output"></div>
+      <button onclick="total()">calculate</button>
+    </div>
+  </body>
+</html>
